@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="eb059793-9c1f-4cba-a015-67a01211798d" name="Tablet" url="http://192.168.2.102">
+        <fileTransfer host="192.168.2.102" port="8022" rootFolder="/data/data/com.termux/files/home" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="8022" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="86edf4c5-59c0-4963-919c-59aac71acc0b" name="Telefono" url="http://192.168.2.93">
+        <fileTransfer host="192.168.2.93" port="8022" rootFolder="/data/data/com.termux/files/home" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="8022" />
+        </fileTransfer>
+      </webServer>
+    </option>
+    <groups>
+      <group>
+        <name>test</name>
+        <servers>
+          <name value="Tablet" />
+          <name value="Telefono" />
+        </servers>
+      </group>
+    </groups>
+  </component>
+</project>
